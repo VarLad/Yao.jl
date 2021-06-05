@@ -34,7 +34,10 @@ makedocs(
         canonical = ("deploy" in ARGS) ? "https://docs.yaoquantum.org/" : nothing,
         assets = [
             "assets/themes/indigo.css",
-            asset("https://raw.githubusercontent.com/QuantumBFS/QuantumBFS.github.io/master/_assets/favicon-dark.ico", class=:ico),
+            asset(
+                "https://raw.githubusercontent.com/QuantumBFS/QuantumBFS.github.io/master/_assets/favicon-dark.ico",
+                class = :ico,
+            ),
         ],
     ),
     doctest = ("doctest=true" in ARGS),
